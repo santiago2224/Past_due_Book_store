@@ -10,12 +10,12 @@ const BookForm = (props) => {
   const [published, setPublished] = useState('')
 
   const submitForm = (event) => {
-    // prevents page from auto-refreshing after form submission
+   
     event.preventDefault()
 
     addBook({title: title, author: author, genre: genre, publisher: publisher, published: published})
 
-    // clears inputs after form submits
+   
     setTitle("")
     setAuthor("")
     setGenre("")
